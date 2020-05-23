@@ -1,6 +1,7 @@
 //pulling what was typed into input box into a var
             //---------CHANGE ID HERE----------------
 //var movie = $("#movie-input").val().trim()
+//----uncomment above and delete below once we have the html----------
 var movie = "toy+story"
 //queryURL to use in ajax call
 var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=wHW18mebdlqyjKaNmDXg2L6Oq2KJaUf3&q=" + movie + "&limit=10&lang=en";
