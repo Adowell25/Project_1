@@ -6,11 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="pics-display">Working title here!</h1>
+<div class="container">
 
-</body>
-<!--Jquery-->
+    <h1>Group Project movie search</h1>
+    <form id="movie-form">
+        <label for ="movie-input"> Search for a movie</label>
+        <input type="text"  id="movie-input"><br>
+
+        <input id="find-movie" type="submit" value="Movie Search">
+    </form>
+
+    <div id="movie-view"></div>
+
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/omdb.js"> </script>
+</body>
+
 
 <script type="text/javascript" src="assets/giphy.js"></script>
 </html>

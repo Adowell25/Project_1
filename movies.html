@@ -1,0 +1,37 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Group Project</h1>
+    
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    
+    $("#find-movie").on("click", function(event) {
+
+        event.preventDefault();
+        var movie = $("#movie-input").val();
+        var queryURL= "https://www.omdbapi.com/?t=" + movie + "&apikey=bb6e985a";
+    
+    // ajax call to omdbapi
+    $.ajax({ 
+        url: queryURL,
+        method: "GET"
+       
+    }).then(function(response) {
+        $("#movie-view").text(JSON.stringify(response));
+        
+    });
+
+
+  </script>
+</body>
+</html>
