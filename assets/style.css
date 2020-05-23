@@ -1,0 +1,24 @@
+body{ 
+    /* font-family: 'Cormorant', serif; */
+    /* font-family: 'Goudy Bookletter 1911', serif; */
+    /* font-family: 'Monoton', cursive; */
+    /* font-family: 'Rock Salt', cursive; */
+    font-size: 22px;
+    color: coral;
+    background-image: url("../images/21000674.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.card-header{
+    font-family: 'Monoton', cursive;
+
+}
+
+.card-content{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
