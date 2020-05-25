@@ -4,7 +4,7 @@ body{
     /* font-family: 'Monoton', cursive; */
     /* font-family: 'Rock Salt', cursive; */
     font-size: 22px;
-    color: coral;
+    color: teal;
     background-image: url("../images/21000674.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +12,10 @@ body{
     margin: 0 auto;
     padding-top: 60px;
 }
-
+.card{
+    width: 75%;
+    margin-left: 240px;
+}
 .card-header{
     font-family: 'Monoton', cursive;
 
@@ -20,5 +23,29 @@ body{
 
 .card-content{
     font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.card-footer{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.tile-parent1{
+    float: left;
+    margin-left: 540px;
+    background-color:lightgray;
+    height: 350px;
+    width: 350px;
+    padding: 10px;
+
+}
+
+.tile-parent2{
+    float: left;
+    margin-left: 150px;
+    background-color:lightgray;
+    height: 350px;
+    width: 350px;
+    padding: 10px;
+
 }
 
