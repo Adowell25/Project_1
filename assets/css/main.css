@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    /* General Content */
+body {
+    color: rgb(214, 211, 211);
+   background-color: rgb(10, 10, 10);
+}
+    /* Navbar */
+
+    /* Main Content */
+.entertainment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.title{
+    font-size: 2vh;
+    font-size: 5vw;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.image-art {
+     margin: 5px;
+}
+    

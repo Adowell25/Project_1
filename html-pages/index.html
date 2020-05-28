@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Group Project #1</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+                <!-- Bulma CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css">
+                <!-- Main Page Css File -->
+        <link rel="stylesheet" href="../assets/css/main.css">
+    </head>
+    <body is-black>
+                <!-- Navigation Bar [Pages included are the logo, movies.html and music.html] -->
+        <nav class="navbar has-background-black" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                </a>
+            </div>
+            <div id="navbar-wrapper" class="navbar-menu">
+                <div class="navbar-start navmenu-items">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+                        
+                    <a class="navbar-item">
+                        Music
+                    </a>
+
+                    <a class="navbar-item">
+                        Movies
+                    </a>
+
+                    <a class="navbar-item">
+                        Tv Shows
+                    </a>
+                </div>
+            </div>
+        </nav>
+                <!-- Main Content [Display Three different rows of: 
+                    Music with album art/cover, Movies with trailer pictures, and 
+                    TV shows with TV trailer art.] -->
+            <section class="section">
+                <div class="hero is-black">
+                    <div class="hero-body is-inline is-paddingless" id="music-section">
+                    <div class="container entertainment" id="music-wrapper">
+                    <img src="../assets/images/examplebeyoncealbum.webp" class="image-art" width="150px" style="height: 200px;">
+                    <img src="../assets/images/examplebeatlesalbum.jpg" class="image-art" width="150px" style="height: 200px;">
+
+
+                            <h1 class="title" class="title-art">Music<span id="music"></span></h1>
+                        
+                            <img src="../assets/images/examplegreendayalbum.png" class="image-art" width="150px" style="height: 200px;">
+                            <img src="../assets/images/examplechancealbum.jpg" class="image-art" width="150px" style="height: 200px;">   
+                    </div>
+                    </div>
+                </div>
+                <div class="hero is-black">
+                    <div class="hero-body">
+                    <div class="container entertainment" id="movies-wrapper">
+                        <img src="../assets/images/examplenachoart.jpg" class="image-art" width="150px" style="height: 200px;">
+                        <img src="../assets/images/examplejokerart.jpg" class="image-art" width="150px" style="height: 200px;">
+                        <img src="../assets/images/examplelordwarart.jpg" class="image-art" width="150px" style="height: 200px;">
+                        <h1 class="title" class="title-art">Movies<span id="movies"></span></h1>
+                        <img src="../assets/images/exampledarkknightart.webp" width="150px" style="height: 200px;">
+                        <img src="../assets/images/examplehobbitart.jpg" width="150px" style="height: 200px;">
+                    </div>
+                    </div>
+                </div>
+                <div class="hero is-black">
+                    <div class="hero-body">
+                    <div class="container entertainment" id="tv-wrapper">
+                        <img src="../assets/images/exampleshamelessarttv.jpg" class="image-art" width="150px" style="height: 200px;">
+                        <h1 class="title" class="title-art">TV Shows<span id="television"></span></h1>
+                        <img src="../assets/images/examplesalemarttv.jpg" class="image-art" width="150px" style="height: 200px;">
+                        <img src="../assets/images/exampledexterarttv.jpeg" class="image-art" width="150px" style="height: 200px;">
+                    </div>
+                    </div>
+                </div>
+            </section>
+                <!-- Footer -->
+
+        
+        
+                <!-- Jquery CDN, Bootstrap JS, and Local Javascript files -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="/assets/js/omdb.js" type="text/javascript"></script>
+        <script src="/assets/js/spotify.js" type="api/javascript"></script>
+    </body>
+</html>
