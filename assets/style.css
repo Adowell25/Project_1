@@ -48,4 +48,69 @@ body{
     padding: 10px;
 
 }
+@media screen and (max-width: 980px){
+
+    body{
+        width: 900px;
+    }
+
+    .card{
+        margin-left:155px
+    }
+
+   .tile-parent2 {
+       float: left;
+       margin-top: -350px;
+   }
+
+   
+
+}
+
+@media screen and (max-width:768px){
+    body{
+        width: 700px;
+    };
+    .title {
+        visibility: hidden;
+    }
+    .subtitle {
+        visibility: hidden;
+    }    
+    .section{
+        margin-top: -80px;
+        margin-left: -100px;
+    }
+   
+}
+
+     @media screen and (max-width:640px){
+        body{
+            background-size: 900px;
+            width: 600px;
+          
+        }
+        .card{
+            margin-top: -60px;
+
+        }
+        
+        .tile-parent1{
+            float: none;
+            height: 200px;
+            width: 200px;
+            margin-top: 10px;
+            margin-right: -30px;
+        }
+        .tile-parent2{
+            float: none;
+            height: 200px;
+            width: 200px;
+            margin-top: -200px;
+        }
+       
+
+        
+
+     }
 
