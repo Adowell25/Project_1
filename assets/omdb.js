@@ -14,20 +14,41 @@ $.ajax({
 //("#movie-view").text(JSON.stringify(response));
     console.log(response)
 
-  var plot = $("src").text("Plot: " +response.Plot);
+  //var plot = $("src").text("Plot: " +response.Plot);
    var poster = $("<img>")
    poster.attr("src", response.Poster)
     
-  poster.append(plot);  
+  
     
     
    $("#movie-view").append(poster);
-   var Plottwo = $("<h1>").text(response.Plot);
 
 
+    var moviePlot = response.Plot;
+
+    var moviePloth1 = $("<h2>");
+    moviePloth1.text(moviePlot);
+    $("#movie-view").append(moviePloth1);
 
 
-   $()
+    var movieRating = response.Rated;
+
+    var movieRatingPar= $("<h2>");
+    movieRatingPar.text(movieRating);
+    $("#movie-view").append(movieRatingPar);
+
+    var movieRelease = response.Released;
+
+    var movieReleaseh2 = $("<h2>");
+    movieReleaseh2.text(movieRelease);
+    $("#movie-view").append(movieReleaseh2);
+
+// create the variable to hold the data from the response object
+// create an element to set the text on, or other data
+// append the elemtn to the movie view
+
+
+   
 
 
 
@@ -36,27 +57,5 @@ $.ajax({
 });
 // we want to display the information in this function under the poster.
 });
-    //  function displayMovieInfo() {
-    //     event.preventDefault();
-       
-    //     var movie = $(this).attr("data-name");
-    //     var queryURL = "https://www.omdbapi.com/?t=" + movie + "apikey=bb6e985a";
-    //     $.ajax({
-    //         url: queryURL,
-    //         method: "GET"
-    //       }).then(function(response) {
-    //         var movieDiv = $("<div class=movie-view'>");
     
-    //         var rating = response.Rated;
-    //         var pOne = $("<p>").text("Rating: " + rating);
-    //         movieDiv.append(pOne);
-
-    //         var plot = response.Plot;
-    //         var pThree = $("<p>").text("Plot: " + plot);
-    //         movieDiv.append(pThree);
-          
-    //      $("#movies-view").prepend(movieDiv);
-    //     }); 
-    
-
-    // }
+      
