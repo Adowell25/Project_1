@@ -1,51 +1,59 @@
-body{ 
-    /* font-family: 'Cormorant', serif; */
-    /* font-family: 'Goudy Bookletter 1911', serif; */
-    /* font-family: 'Monoton', cursive; */
-    /* font-family: 'Rock Salt', cursive; */
-    font-size: 22px;
-    color: teal;
-    background-image: url("../images/21000674.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 60px;
+body {
+  /* font-family: 'Cormorant', serif; */
+  /* font-family: 'Goudy Bookletter 1911', serif; */
+  /* font-family: 'Monoton', cursive; */
+  /* font-family: 'Rock Salt', cursive; */
+  font-size: 22px;
+  color: teal;
+  background-image: url("../images/21000674.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 60px;
 }
-.card{
-    width: 75%;
-    margin-left: 240px;
+.card {
+  width: 75%;
+  margin-left: 240px;
 }
-.card-header{
-    font-family: 'Monoton', cursive;
-
-}
-
-.card-content{
-    font-family: 'Goudy Bookletter 1911', serif;
+.card-header {
+  font-family: "Monoton", cursive;
 }
 
-.card-footer{
-    font-family: 'Goudy Bookletter 1911', serif;
+.card-content {
+  font-family: "Goudy Bookletter 1911", serif;
 }
 
-.tile-parent1{
-    float: left;
-    margin-left: 540px;
-    background-color:lightgray;
-    height: 350px;
-    width: 350px;
-    padding: 10px;
-
+.card-footer {
+  font-family: "Goudy Bookletter 1911", serif;
 }
 
-.tile-parent2{
-    float: left;
-    margin-left: 150px;
-    background-color:lightgray;
-    height: 350px;
-    width: 350px;
-    padding: 10px;
-
+.tile-parent1 {
+  float: left;
+  margin-left: 540px;
+  background-color: lightgray;
+  height: auto;
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
+.tile-parent2 {
+  float: left;
+  margin-left: 150px;
+  background-color: lightgray;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.footer {
+  background-color: lightgrey;
+  clear: both;
+  margin: 20%;
+}
+
+#gif-pics {
+  padding: 5px;
+}
