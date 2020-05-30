@@ -1,16 +1,23 @@
-//pulling what was typed into input box into a var
+
+
+//on click to run ajax
+$("#search").on("click", function(){
+  $("#gif-pics").empty();
+  //pulling what was typed into input box into a var
             //---------CHANGE ID HERE----------------
-//var movie = $("#movie-input").val().trim()
-//----uncomment above and delete below once we have the html----------
-var movie = "toy+story"
+var movie = $("#search-criteria").val().trim();
+
 //queryURL to use in ajax call
-var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=wHW18mebdlqyjKaNmDXg2L6Oq2KJaUf3&q=" + movie + "&limit=10&lang=en";
+var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=wHW18mebdlqyjKaNmDXg2L6Oq2KJaUf3&q=" + movie + "&limit=1&lang=en";
+  console.log("clicked");
+  console.log(movie);
 //ajax call
 $.ajax({
     url: queryURL,
     method: "GET",
     //after ajax call then...
 }).then(function(response){
+  console.log(response)
      //making it easier on myself with less typing
      var results = response.data;
      //for loop to display each of the responses
@@ -29,9 +36,10 @@ $.ajax({
         //appending everything to the page
         pictureDiv.append(gif);
         //---------CHANGE ID HERE----------------
-        $("#pics-display").append(pictureDiv);
+        $("#gif-pics").append(pictureDiv);
      }
-})
+});
+});
 //pause and play on click function
 $(document.body).on("click", ".gif", function() {
     //geting state data into a var to use
