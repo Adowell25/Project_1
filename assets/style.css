@@ -1,3 +1,4 @@
+
      body {
       /* font-family: 'Cormorant', serif; */
       /* font-family: 'Goudy Bookletter 1911', serif; */
@@ -155,3 +156,7 @@
         }
     
 
+
+#gif-pics {
+  padding: 5px;
+}
