@@ -9,7 +9,7 @@ $("#search").on("click", function () {
   var queryURL =
     "https://api.giphy.com/v1/gifs/search?api_key=wHW18mebdlqyjKaNmDXg2L6Oq2KJaUf3&q=" +
     movie +
-    "&limit=3&lang=en";
+    "&limit=7&lang=en";
   console.log("clicked");
   console.log(movie);
   //ajax call
@@ -21,24 +21,27 @@ $("#search").on("click", function () {
     console.log(response);
     //making it easier on myself with less typing
     var results = response.data;
+    //making list
+    var list = $("<ol>")
     //for loop to display each of the responses
     for (var i = 0; i < results.length; i++) {
       //picture div to append everything to, to put on page
-      var pictureDiv = $("<div>");
+      var pictureDiv = $("<li>");
       //image tag to put the moving and still pics in
       var gif = $("<img>");
       //making the first thing that shows up the still image
-      gif.attr("src", results[i].images.fixed_height_still.url);
+      gif.attr("src", results[i].images.fixed_height_small_still.url);
       //giving data attributes amd a class to the image to call on later to pause and play the gifs
-      gif.attr("data-animate", results[i].images.fixed_height.url);
-      gif.attr("data-still", results[i].images.fixed_height_still.url);
+      gif.attr("data-animate", results[i].images.fixed_height_small.url);
+      gif.attr("data-still", results[i].images.fixed_height_small_still.url);
       gif.addClass("gif");
       gif.attr("data-state", "still");
       //appending everything to the page
       pictureDiv.append(gif);
+      list.append(pictureDiv)
 
       //---------CHANGE ID HERE----------------
-      $("#gif-pics").append(pictureDiv);
+      $("#gif-pics").append(list);
     }
   });
 });

@@ -44,13 +44,14 @@
       width: 350px;
       padding: 10px;
       margin-bottom: 15px; */
+      font-family: 'Goudy Bookletter 1911', serif;
       background-color: lightgray;
       height: auto;
       width: 350px;
       padding: 10px;
       margin-top: 15px;
       margin-bottom: 15px;
-      margin-left: 370px;
+      margin-left: 525px;
       clear: none;
     
     }
@@ -63,9 +64,10 @@
       width: auto;
       padding: 10px;
       margin-bottom: 15px; */
+      font-family: 'Goudy Bookletter 1911', serif;
       background-color: lightgray;
       height: auto;
-      width: 400px;
+      width: 350px;
       padding: 10px;
       margin-top: 15px;
       margin-bottom: 15px;
